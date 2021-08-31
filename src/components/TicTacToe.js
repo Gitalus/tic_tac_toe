@@ -2,8 +2,16 @@ import React from 'react'
 
 export const TicTacToe = () => {
     return (
-        <div>
-            Hola
+        <div class="game-board">
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
         </div>
     )
 }
