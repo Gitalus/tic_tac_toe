@@ -4,10 +4,19 @@ body {
     box-sizing: border-box;
     background: DarkSeaGreen;
     display: flex;
+    font-family: Helvetica, Arial, sans-serif;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 100vh;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-board {
@@ -15,17 +24,17 @@ body {
 	height: 600px;
 	margin: 0 auto;
     background-color: #34495e;
-    color: #fff;
     border: 6px solid #2c3e50;
     border-radius: 10px;
-	
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
 .box {
+    background-color: #34495e;
     border: 6px solid #2c3e50;
     border-radius: 2px;
+    color: #fff;
     font-family: Helvetica;
     font-weight: bold;
     font-size: 4em;
