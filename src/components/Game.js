@@ -26,7 +26,7 @@ export const Game = () => {
     return (
         <div className="container">
             <h1>TicTacToe in React.js</h1>
-            <h3>{ winner ? "Winner: " + winner : "Next Player: " + xO }</h3>
+            <h2>{ winner ? "Winner: " + winner : "Next Player: " + xO }</h2>
             <Board squares={ history[stepNumber] } onClick={ handleClick } />
         </div>
     )
