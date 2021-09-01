@@ -6,7 +6,7 @@ export const Game = () => {
 
     const [ squares, setSquares ] = useState( Array(9).fill(null) );
     const [ xIsNext, setXIsNext ] = useState( true );
-    const winner = calculateWinner( squares );
+    const [ winner, matches ] = calculateWinner( squares );
     const xO = xIsNext ? "X" : "O";
 
     function handleClick(i) {
@@ -22,9 +22,9 @@ export const Game = () => {
     return (
         <div className="container">
             <h1>TicTacToe in React.js</h1>
-            <h1>{ winner ? `Winner:  ${ winner }` : "Next Player: " + xO }</h1>
+            <h1>{ winner  ? <div className="animate__animated animate__wobble winner">Winner: { winner }</div> : <div style={{ padding: "12px" }}>Next Player: { xO }</div>}</h1>
             <button className="resetbtn" onClick={ () => { setSquares(Array(9).fill(null)) }}>Start Again</button>
-            <Board squares={ squares } onClick={ handleClick } />
+            <Board squares={ squares } handleClick={ handleClick } matches={ matches }/>
         </div>
     )
 }
