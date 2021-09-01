@@ -1,2 +1,2 @@
-# Tic Tac Toe using only hooks
+# Tic Tac Toe in React using hooks
 https://gitalus.github.io/tic_tac_toe/
