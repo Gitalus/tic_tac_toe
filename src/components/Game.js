@@ -5,6 +5,7 @@ import { Board } from './Board';
 export const Game = () => {
 
     const [history, setHistory] = useState([Array(9).fill(null)]);
+    console.log(history);
     const [stepNumber, setStepNumber] = useState(0);
     const [xIsNext, setXIsNext] = useState(true);
     const winner = calculateWinner(history[stepNumber]);
