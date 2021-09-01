@@ -80,3 +80,10 @@ body {
     border-radius: 5px;
     padding: 10px
 }
+
+@media screen and (max-width: 900px) {
+    .game-board {
+        width: 400px;
+        height: 400px;
+    }
+}
